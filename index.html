@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins&family=Sacramento&display=swap');">
+    <link rel="stylesheet" href="
+    https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <style>
         *{
             padding:0;
@@ -14,6 +14,7 @@
         body{
             background-color: rgb(1, 1, 10);
             color: white;
+            font-family: 'Poppins',sans-serif;
         }
         nav{
             display: flex;
@@ -27,31 +28,78 @@
             justify-content: center;
 
         }
-        nav ul li{
+        nav ul li {
             list-style: none;
             margin : 0 23px;
         }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color:rgb(133, 133, 193);
+            font-size :1.04rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+
+        }
         .left
         {
-            font-size: 1.5;
+            font-size: 1.5rem;
         }
         .firstsection{
          display: flex;
          justify-content: space-around;
-         margin: 23px 0;   
+         align-items: center;
+         margin: 140px 0;
+            
         }
-        .firstsection div{
+        .firstsection > div{
          width: 30%;
         }
         .leftsection{
-            background-color:;
-            font-size: 3rem;
-            width: ;
+            
+            font-size: 2.4rem;
+            
         }
         .rightsection img{
-
            
-            width: ;
+            width: 80%;
+            margin: 50px 0 ;
+        }
+        .purple{
+            color: rgb(63, 63, 204);
+        }
+        .textgray{
+            color: gray;
+        }
+        #element{
+            color: rgb(69, 69, 193);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
         }
     </style>
 </head>
@@ -61,10 +109,10 @@
             <div class="left">Aaron's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,14 +120,33 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-              Hi , I am Aaron
-              <div>I am a web developer</div>
+              Hi , I am <span class="purple">Aaron</span>
+              <div>I am a passionate</div>
+              <span id="element"></span>
             </div>
             <div class="rightsection">
-               <img src="bg.jpeg" alt="">
+               <img src="bg" alt="">
             </div>
-
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="textgray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
         </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Data Analyst','Devops Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>
