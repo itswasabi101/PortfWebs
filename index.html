@@ -6,102 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="
     https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
-    <style>
-        *{
-            padding:0;
-            margin:0;
-        }
-        body{
-            background-color: rgb(1, 1, 10);
-            color: white;
-            font-family: 'Poppins',sans-serif;
-        }
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(9, 9, 82);
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-
-        }
-        nav ul li {
-            list-style: none;
-            margin : 0 23px;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-        nav ul li a:hover{
-            color:rgb(133, 133, 193);
-            font-size :1.04rem;
-        }
-        main hr{
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 40px 84px;
-
-        }
-        .left
-        {
-            font-size: 1.5rem;
-        }
-        .firstsection{
-         display: flex;
-         justify-content: space-around;
-         align-items: center;
-         margin: 140px 0;
-            
-        }
-        .firstsection > div{
-         width: 30%;
-        }
-        .leftsection{
-            
-            font-size: 2.4rem;
-            
-        }
-        .rightsection img{
-           
-            width: 80%;
-            margin: 50px 0 ;
-        }
-        .purple{
-            color: rgb(63, 63, 204);
-        }
-        .textgray{
-            color: gray;
-        }
-        #element{
-            color: rgb(69, 69, 193);
-        }
-        .secondSection{
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-        .secondSection h1{
-            font-size: 1.9rem;
-        }
-        .secondSection .box{
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-        .secondSection .vertical{
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
     <header>
@@ -123,6 +29,10 @@
               Hi , I am <span class="purple">Aaron</span>
               <div>I am a passionate</div>
               <span id="element"></span>
+              <div class="buttons">
+                <button class="btn" onclick="location.href='https://drive.google.com/file/d/1E1UvsjfjAkKSDg3NUVNKfi0l83uB5xFg/view?usp=drive_link'">Download Resume</button>
+                <button class="btn" onclick="location.href='https://github.com/itswasabi101'">Visit Github</button>
+              </div>
             </div>
             <div class="rightsection">
                <img src="bg" alt="">
@@ -133,13 +43,79 @@
             <span class="textgray">What I have done so far</span>
             <h1>Work Experience</h1>
             <div class="box">
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer 2020-2021
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis non, corporis nesciunt labore illum at totam incidunt, amet earum ad necessitatibus alias ex eius dolore perferendis cumque reiciendis nemo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top1" src="nodejs.png" alt="">
+                    <div class="vertical-title">
+                        NodeJS Developer 2021-2022
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis non, corporis nesciunt labore illum at totam incidunt, amet earum ad necessitatibus alias ex eius dolore perferendis cumque reiciendis nemo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top2" src="devops.png" alt="">
+                    <div class="vertical-title">
+                        Devops Engineer 2022-2023
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis non, corporis nesciunt labore illum at totam incidunt, amet earum ad necessitatibus alias ex eius dolore perferendis cumque reiciendis nemo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer 2020-2021
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis non, corporis nesciunt labore illum at totam incidunt, amet earum ad necessitatibus alias ex eius dolore perferendis cumque reiciendis nemo.
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aaron's Devloper Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright 	&#169;Aaronsportfolio.com | All rights reserved 
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
