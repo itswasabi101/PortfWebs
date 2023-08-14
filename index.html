@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Site</title>
+    <title> Portfolio Site</title>
     <link rel="stylesheet" href="
     https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="styles.css">
@@ -16,8 +16,7 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
+                    <li><a href="projects.html" target="_blank">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
@@ -30,8 +29,18 @@
               <div>I am a passionate</div>
               <span id="element"></span>
               <div class="buttons">
-                <button class="btn1" style="--clr:neon" onclick="location.href='https://drive.google.com/file/d/1FQqUYj3lS9EA9_yrtqQy9xNzzcCM-gF_/view?usp=drive_link'">Download Resume</button>
-                <button class="btn2" style="--clr:neon" onclick="location.href='https://github.com/itswasabi101'">Visit Github</button>
+                <button class="btn1" style="--clr:neon" onclick="openLinkInNewTab()" >Download Resume</button>
+                <script>
+                    let openLinkInNewTab = () =>{
+                        window.open('https://drive.google.com/file/d/1FQqUYj3lS9EA9_yrtqQy9xNzzcCM-gF_/view?usp=sharing')
+                    };
+                </script>
+                <button class="btn2" style="--clr:neon" onclick="openLinkInNewTab2()">Visit Github</button>
+                <script>
+                    let openLinkInNewTab2 = () =>{
+                        window.open('https://github.com/itswasabi101')
+                    };
+                </script>
               </div>
             </div>
             <div class="rightsection">
