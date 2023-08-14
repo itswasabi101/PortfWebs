@@ -5,7 +5,7 @@
 
 body {
     background-color: rgb(1, 1, 10);
-    color: white;
+    color: rgb(214, 201, 201);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -175,6 +175,7 @@ footer .footer-rights {
 }
 .buttons{
     padding: 2px;    
+    color: #9c97f1;
     
 }
 
