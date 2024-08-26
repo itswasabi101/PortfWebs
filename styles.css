@@ -231,3 +231,62 @@ footer .footer-rights {
     text-decoration: none;
     color: whitesmoke;
 }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .firstsection > div {
+        width: 90%;
+    }
+
+    .rightsection img {
+        width: 100%;
+    }
+
+    .secondSection {
+        height: auto;
+    }
+
+    .secondSection h1 {
+        font-size: 1.4rem;
+    }
+
+    .secondSection .box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .footer>div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn1, .btn2 {
+        padding: 12px 20px;
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
