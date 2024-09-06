@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>     Portfolio </title>
-    <link rel="stylesheet" href="
-    https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
-    <link rel="stylesheet" href="styles.css">
-   <link rel="shortcut icon" type="image-top" href="favimg.ico">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="
+    https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image-top" href="favimg.ico" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="left">Aaron's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="projects.html" target="_blank">Projects</a></li>
-                    <li><a href="contatctme.html" target="_blank">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="left">Aaron's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="projects.html" target="_blank">Projects</a></li>
+            <li><a href="contatctme.html" target="_blank">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="firstsection">
-            <div class="leftsection">
-              Hi , I am <span class="purple">Aaron</span>
-              <div>I am a passionate</div>
-              <span id="element"></span>
-              <div class="buttons">
-                <button class="btn1" style="--clr:neon" onclick="openLinkInNewTab()" >Resume</button>
-                <script>
-                    let openLinkInNewTab = () =>{
-                        window.open('https://drive.google.com/file/d/1JCjuOIVtDNG7WDwSy_1w0MCwVoEOGq4P/view?usp=drive_link')
-                    };
-                </script>
-                <button class="btn2" style="--clr:neon" onclick="openLinkInNewTab2()">Visit Github</button>
-                <script>
-                    let openLinkInNewTab2 = () =>{
-                        window.open('https://github.com/itswasabi101')
-                    };
-                </script>
-              </div>
-            </div>
-            <div class="rightsection">
-               <img src="bg" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="secondSection">
-            <span class="textgray">What I have done so far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical">
-                    <img class="image-top" src="html.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer 2020-Present
-                    </div>
-                    <div class="vertical-desc">
-                         
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top1" src="nodejs.png" alt="">
-                    <div class="vertical-title">
-                        NodeJS Developer 2021-Present
-                    </div>
-                    <div class="vertical-desc">
-                    
-                    </div>
-                </div>
-<!--                 <div class="vertical">
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi , I am <span class="purple">Aaron</span>
+          <div>I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button
+              class="btn1"
+              style="--clr: neon"
+              onclick="openLinkInNewTab()"
+            >
+              Resume
+            </button>
+            <script>
+              let openLinkInNewTab = () => {
+                window.open(
+                  "https://drive.google.com/file/d/1JCjuOIVtDNG7WDwSy_1w0MCwVoEOGq4P/view?usp=drive_link"
+                );
+              };
+            </script>
+            <button
+              class="btn2"
+              style="--clr: neon"
+              onclick="openLinkInNewTab2()"
+            >
+              Visit Github
+            </button>
+            <script>
+              let openLinkInNewTab2 = () => {
+                window.open("https://github.com/itswasabi101");
+              };
+            </script>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="textgray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">2020-Present</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top1" src="nodejs.png" alt="" />
+            <div class="vertical-title">NodeJS Developer </div>
+            <div class="vertical-desc">2021-Present</div>
+          </div>
+          <!--                 <div class="vertical">
                     <img class="image-top2" src="devops.png" alt="">
                     <div class="vertical-title">
                         Devops Engineer 2022-Present
@@ -79,63 +88,60 @@
                         
                     </div>
                 </div> -->
-                <div class="vertical">
-                    <img class="image-top" src="developer.png" alt="">
-                    <div class="vertical-title">
-                        JavaScript Developer 2021-Present
-                    </div>
-                    <div class="vertical-desc">
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="vertical">
+            <img class="image-top2" src="developer.png" alt="" />
+            <div class="vertical-title">JavaScript Developer</div>
+            <div class="vertical-desc">2021-Present</div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Aaron's Devloper Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li id="scrollToTop">Home</li>
-                    
-                </ul>
-            </div>
-            <div class="footer-third">
-                <ul>
-                    
-                    <li>Services</li>
-                    
-                </ul>
-            </div>
-            <div class="footer-fourth">
-                <ul>
-                   
-                    <li><a href="contatctme.html" target="_blank">Contact</a></li>
-                </ul>
-            </div>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Aaron's Devloper Portfolio</h3>
         </div>
-        <div class="footer-rights">
-            Copyright 	&#169;Aaronsportfolio.com | All rights reserved 
+        <div class="footer-second">
+          <ul>
+            <li id="scrollToTop">Home</li>
+          </ul>
         </div>
+        <div class="footer-third">
+          <ul>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li><a href="contatctme.html" target="_blank">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169;Aaronsportfolio.com | All rights reserved
+      </div>
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
-        var typed = new Typed('#element', {
-          strings: ['Web Developer','Software Developer','Cybersecurity Enthusiast'],
-          typeSpeed: 50,
-        });
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Software Developer",
+          "Cybersecurity Enthusiast",
+        ],
+        typeSpeed: 50,
+      });
     </script>
     <script>
-        document.getElementById('scrollToTop').addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+      document
+        .getElementById("scrollToTop")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         });
     </script>
-    
-</body>
+  </body>
 </html>
