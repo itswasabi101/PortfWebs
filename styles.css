@@ -94,6 +94,8 @@ main hr {
     color: rgb(214, 201, 201);
     padding: 40px 0;
     margin-bottom: 40px;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .secondSection h1 {
@@ -108,32 +110,45 @@ main hr {
     margin-top: 200px;
     margin-bottom: 480px;
     display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .secondSection .vertical {
-    height: 93px;
-    width: 1px;
-    background-color: white;
+    height: auto;
+    width: auto;
+    background-color:transparent;
     margin: 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    text-align: center;
+    padding: 20px;
 }
 
 .image-top {
-    width: 23px;
+    width: 45px;
     position: relative;
     top: -32px;
     left: -9px;
 }
 
 .image-top1 {
-    width: 40px;
+    width: 60px;
     position: relative;
     top: -26px;
     left: -4px;
+    margin-bottom: 25px;
 
 }
 
 .image-top2 {
-    width: 40px;
+    width: 45px;
     position: relative;
     top: -26px;
     left: -4px;
@@ -142,9 +157,10 @@ main hr {
 
 .vertical-title {
     position: relative;
-    top: 75px;
+    top: 40px;
     width: 150px;
     font-size: 14px;
+    
 }
 
 .vertical-desc {
@@ -152,7 +168,7 @@ main hr {
     top: 86px;
     color: gray;
     width: 150px;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .footer {
