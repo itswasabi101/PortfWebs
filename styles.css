@@ -255,7 +255,7 @@ footer .footer-rights {
 }
 .footer-fourth a{
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(214, 201, 201);;
 }
 @media (max-width: 768px) {
     nav {
@@ -313,7 +313,8 @@ footer .footer-rights {
         /* margin: 15px 20px; */
         margin-top: 15px;
         margin-bottom: 100px;
-        background-color: rgb(214, 201, 201);
+        /*background-color: rgb(214, 201, 201);*/
+        background-color: transparent;
         position: relative;
     }
 
@@ -327,7 +328,7 @@ footer .footer-rights {
     .secondSection .vertical-desc {
         position:absolute;
         top: 15px;
-        left: 60px;
+        left: 80px;
         width: auto;
         margin-top: 20px;
         color: gray;
@@ -364,5 +365,47 @@ footer .footer-rights {
 
     body {
         font-size: 14px;
+    }
+
+    .footer-first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-second{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-second ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-third{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-third ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-fourth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-fourth ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
