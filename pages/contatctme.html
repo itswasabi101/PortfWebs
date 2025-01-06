@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../styling/style3.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="left-container">
+          <div class="left-inner-container">
+            <h2>Let's Connect</h2>
+            <p>I'd love to hear from you. Feel free to reach out!</p>
+            <div class="social-media">
+              <a href="https://leetcode.com/u/itswasabi/" class="icon-button">
+                <img src="../assets/leetcode.png" alt="leetcode">
+                <i class="fab fa-leetcode"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/aaron-abraham-470863213/" target="_blank" class="icon-button">
+                <img src="../assets/linkedin.png" alt="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="right-inner-container">
+            <form action="https://formsubmit.co/el/wutonu" method="POST">
+              <h2 class="lg-view">Contact Me</h2>
+              <h2 class="sm-view">Let's Connect</h2>
+              <div class="input-container">
+                <input type="text" name="name" required />
+                <label>Name</label>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" />
+                <label>Phone</label>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" required></textarea>
+                <label>Message</label>
+              </div>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

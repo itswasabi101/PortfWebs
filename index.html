@@ -9,8 +9,10 @@
       href="
     https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" type="image-top" href="favimg.ico" />
+    <link rel="stylesheet" href="styling/styles.css" />
+    <link rel="shortcut icon" type="image-top" href="./assets/favimg.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -19,15 +21,15 @@
         <div class="right">
           <ul>
             <li><a href="#top">Home</a></li>
-            <li><a href="projects.html" target="_blank">Projects</a></li>
-            <li><a href="contatctme.html" target="_blank">Contact Me</a></li>
+            <li><a href="./pages/projects.html" target="_blank">Projects</a></li>
+            <li><a href="./pages/contatctme.html" target="_blank">Contact Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <section class="firstsection">
-        <div class="leftsection">
+        <div class="leftsection" data-aos="fade-right">
           Hi , I am <span class="purple">Aaron</span>
           <div>I am a passionate</div>
           <span id="element"></span>
@@ -61,43 +63,39 @@
           </div>
         </div>
         <div class="rightsection">
-          <img src="bg" alt="" />
+          <img class="developer-img" data-aos="fade-left" src="./assets/dev.jpg" alt="" />
         </div>
       </section>
       <hr />
-      <section class="secondSection">
+      <section class="secondSection" data-aos="fade-up">
         <span class="textgray">What I have done so far</span>
         <h1>Work Experience</h1>
         <div class="box">
-          <div class="vertical">
-            <img class="image-top" src="html.png" alt="" />
+          <div class="vertical" data-aos="zoom-in" data-aos-delay="100">
+            <img class="image-top" src="./assets/html.png" alt="" />
             <div class="vertical-title">HTML Developer</div>
             <div class="vertical-desc">2020-Present</div>
           </div>
-          <div class="vertical">
-            <img class="image-top1" src="nodejs.png" alt="" />
+          <div class="vertical" data-aos="zoom-in" data-aos-delay="200">
+            <img class="image-top1" src="./assets/nodejs.png" alt="" />
             <div class="vertical-title">NodeJS Developer </div>
             <div class="vertical-desc">2021-Present</div>
           </div>
-          <!--                 <div class="vertical">
-                    <img class="image-top2" src="devops.png" alt="">
-                    <div class="vertical-title">
-                        Devops Engineer 2022-Present
-                    </div>
-                    <div class="vertical-desc">
-                        
-                    </div>
-                </div> -->
-          <div class="vertical">
-            <img class="image-top2" src="developer.png" alt="" />
+          <div class="vertical" data-aos="zoom-in" data-aos-delay="300">
+            <img class="image-top2" src="./assets/developer.png" alt="" />
             <div class="vertical-title">JavaScript Developer</div>
             <div class="vertical-desc">2021-Present</div>
+          </div>
+          <div class="vertical" data-aos="zoom-in" data-aos-delay="400">
+            <img class="image-top3" src="./assets/csharp.png" alt="" />
+            <div class="vertical-title">C# Developer</div>
+            <div class="vertical-desc">2024-Present</div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="footer">
+      <div class="footer" data-aos="fade-up">
         <div class="footer-first">
           <h3>Aaron's Devloper Portfolio</h3>
         </div>
@@ -113,7 +111,7 @@
         </div>
         <div class="footer-fourth">
           <ul>
-            <li><a href="contatctme.html" target="_blank">Contact</a></li>
+            <li><a href="./pages/contatctme.html" target="_blank">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -143,5 +141,11 @@
           });
         });
     </script>
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true
+      });
+    </script>    
   </body>
 </html>
